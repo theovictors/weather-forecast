@@ -1,0 +1,35 @@
+{
+  "name": "weather-forecast",
+  "description": "Challenge",
+  "version": "0.1.0",
+  "homepage": "https://github.com/theovictors/weather-forecast",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/theovictors/weather-forecast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theovictors/weather-forecast/issues"
+  },
+  "devDependencies": {
+    "express": "~3.4.0",
+    "grunt-plato": "~0.2.1",
+    "grunt-docular": "latest",
+    "grunt-angular-templates": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.6.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-concurrent": "~0.3.1",
+    "grunt-karma": "~0.6.2",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-strip": "~0.2.1",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt": "~0.4.1",
+    "grunt-express-server": " ~0.4.3",
+    "grunt-contrib-connect": "~0.5.0",
+    "karma-coverage": "~0.1.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-bump": "0.0.11"
+  },
+  "keywords": []
+}

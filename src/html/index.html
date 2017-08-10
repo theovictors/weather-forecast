@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" ng-app="weatherforecast">
+    <head>
+        <meta charset="utf-8">
+        <title>weather-forecast</title>
+        <script src="vendor.js"></script>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="app.css"/>
+    </head>
+    <body>
+        <div>weather-forecast</div>
+        <div ng-controller="demoControllerRoot">
+            <ul>
+                <li ng-repeat = "(key,val) in rows">List item {{key}}</li>
+            </ul>
+        </div>
+        <div ng-view></div>
+    </body>
+</html>

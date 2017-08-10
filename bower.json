@@ -1,0 +1,18 @@
+{
+    "name": "weather-forecast",
+    "version": "0.1.0",
+    "main": "dist/weather-forecast.min.js",
+    "ignore":[
+        "analytics",
+        "node_modules",
+        "vendor",
+        "test",
+        "docs"
+    ],
+    "dependencies":{},
+    "devDependencies":{
+        "angular":"~1.0.8",
+        "angular-bootstrap":"~0.6.0",
+        "angular-mocks":"~1.0.8"
+    }
+}

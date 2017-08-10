@@ -1,0 +1,6 @@
+{
+    "link":[
+        "vendor/managed/angular/angular.min.js",
+        "vendor/managed/angular-bootstrap/ui-bootstrap-tpls.min.js"
+    ]
+}
