@@ -1,35 +1,33 @@
 {
-  "name": "weather-forecast",
-  "description": "Challenge",
-  "version": "0.1.0",
-  "homepage": "https://github.com/theovictors/weather-forecast",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/theovictors/weather-forecast.git"
-  },
-  "bugs": {
-    "url": "https://github.com/theovictors/weather-forecast/issues"
-  },
+  "name": "weatherforecast",
+  "private": true,
   "devDependencies": {
-    "express": "~3.4.0",
-    "grunt-plato": "~0.2.1",
-    "grunt-docular": "latest",
-    "grunt-angular-templates": "~0.4.1",
-    "grunt-contrib-cssmin": "~0.6.2",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-concurrent": "~0.3.1",
-    "grunt-karma": "~0.6.2",
-    "grunt-contrib-jshint": "~0.6.4",
-    "grunt-strip": "~0.2.1",
-    "grunt-contrib-uglify": "~0.2.4",
-    "grunt": "~0.4.1",
-    "grunt-express-server": " ~0.4.3",
-    "grunt-contrib-connect": "~0.5.0",
-    "karma-coverage": "~0.1.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-bump": "0.0.11"
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-autoprefixer": "2.3.1",
+    "gulp-cache": "^0.2.10",
+    "rimraf": "^2.4.0",
+    "gulp-filter": "^2.0.2",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^1.11.1",
+    "gulp-karma": "0.0.4",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-rev": "^5.0.1",
+    "gulp-rev-replace": "^0.4.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-useref": "^3.0.0",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.2.4",
+    "run-sequence": "^1.1.1",
+    "wiredep": "^2.2.2",
+    "lazypipe": "^0.2.4",
+    "gulp-ng-annotate": "^1.0.0",
+    "open": "0.0.5",
+    "jshint-stylish": "^1.0.0"
   },
-  "keywords": []
+  "engines": {
+    "node": ">=0.10.0"
+  }
 }

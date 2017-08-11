@@ -1,3 +1,3 @@
 {
-	"directory":"vendor/managed"
+  "directory": "app/bower_components"
 }

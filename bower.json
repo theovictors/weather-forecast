@@ -1,18 +1,29 @@
 {
-    "name": "weather-forecast",
-    "version": "0.1.0",
-    "main": "dist/weather-forecast.min.js",
-    "ignore":[
-        "analytics",
-        "node_modules",
-        "vendor",
-        "test",
-        "docs"
-    ],
-    "dependencies":{},
-    "devDependencies":{
-        "angular":"~1.0.8",
-        "angular-bootstrap":"~0.6.0",
-        "angular-mocks":"~1.0.8"
+  "name": "weather-forecast",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "^1.4.0",
+    "bootstrap": "^3.2.0",
+    "angular-animate": "^1.4.0",
+    "angular-cookies": "^1.4.0",
+    "angular-resource": "^1.4.0",
+    "angular-route": "^1.4.0",
+    "angular-sanitize": "^1.4.0",
+    "angular-touch": "^1.4.0",
+    "simpleWeather": "^3.1.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.0"
+  },
+  "appPath": "app",
+  "moduleName": "weatherForecastApp",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
     }
+  }
 }
