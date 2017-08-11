@@ -1,0 +1,60 @@
+<div class="container">
+
+  <!-- state and city select -->
+  <div class="jumbotron">
+    <div class="row">
+      <div class="form-group col-lg-5" >
+        <label for="sel1">State</label>
+        <select class="form-control" ng-model="state" ng-options="st as st.name for st in states">
+        </select>
+      </div>
+      <div class="form-group col-lg-5">
+        <label for="sel1">City</label>
+        <select class="form-control" ng-disabled="!state"  ng-model="city" ng-options="ct as ct for ct in state.cities">
+        </select>
+      </div>
+        <div class="col-md-1 col-sm-2 col-xs-6">
+      <button style="margin-top: 1.8em;" type="button" name="button" class="btn btn-primary" ng-disabled="!city" ng-click="search(state, city)">Search</button>
+    </div>
+    </div>
+  </div>
+
+  <!-- weather cards -->
+	<div class="row">
+		<div class="col-sm-4" ng-repeat="weather in weathers">
+			<div class="weather-card one">
+				<div class="top">
+					<div class="wrapper">
+						<h1 class="heading" ng-bind="weather.day + ', ' + weather.date"></h1>
+						<p class="temp">
+							<span class="temp-value" ng-bind="getAverage(weather.high, weather.low)"></span>
+							<span class="deg">0</span>
+							<a href="#"><span class="temp-type">C</span></a>
+						</p>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="wrapper">
+						<ul class="forecast">
+							<a href="#"><span class="lnr lnr-chevron-up go-up"></span></a>
+							<li>
+								<span class="date">Max</span>
+								<span class="lnr lnr-sun condition">
+									<span class="temp" ng-bind="weather.high"><span class="deg">0</span><span class="temp-type">C</span></span>
+								</span>
+							</li>
+							<li>
+								<span class="date">Min</span>
+								<span class="lnr lnr-cloud condition">
+									<span class="temp" ng-bind="weather.low"><span class="deg">0</span><span class="temp-type">C</span></span>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div
+	</div>
+
+</div>
+
