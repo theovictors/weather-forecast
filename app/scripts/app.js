@@ -24,11 +24,6 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/forecast', {
-        templateUrl: 'views/forecast.html',
-        controller: 'ForecastCtrl',
-        controllerAs: 'forecast'
-      })
       .otherwise({
         redirectTo: '/'
       });
