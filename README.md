@@ -5,6 +5,8 @@
 
 Aplicação de previsão do tempo focada nas cidades brasileiras, desenvolvida em AngularJS.
 
+Você pode acessar uma prévia do aplicativo sem a necessidade de clonar o repositório clicando [aqui](https://theovictors.github.io/weather-forecast/).
+
 
 ## Pré-requisitos
 
