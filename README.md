@@ -1,19 +1,18 @@
 # ⛅ Weather Forecast 
-> Desafio de front-end
 
 
 ## O que é isso?
 
-É uma aplicação feita utilizando Angular 1 de apresentação de previsão do tempo para determinada cidade brasileira.
+Aplicação de previsão do tempo focada nas cidades brasileiras, desenvolvida em AngularJS.
 
 
 ## Pré-requisitos
 
-Para desenvolver, você precisará apenas do Node.js instalado no seu ambiente.
+Para desenvolver, você precisará apenas do [Node.js](http://nodejs.org/) instalado no seu ambiente.
 
-### Node
+Caso não tenha o bower instalado globalmente, execute o comando abaixo:
 
-O [Node](http://nodejs.org/) é bem fácil de instalar e já vem com o gerenciador de pacotes [npm](https://npmjs.org/) incluso.
+    $ npm install -g bower
 
 
 ## Build & desenvolvimento
@@ -42,16 +41,16 @@ Utilize o comando `gulp serve` para rodar o projeto no navegador.
 
 ## Funcionalidades
 
-- Mostra, em formato de cards, a previsão do tempo da semana, contando a partir do dia de hoje;
-- Possibilita escolher um estado e cidade brasileira;
-- Apresenta temperatura máxima e mínima.
-
-## Melhorias
-
-- Modificar background do card conforme previsão do dia (sol, nublado, chuvoso...);
-- Salvar uma cidade como favorita;
-- Apresentar variação de temperatura;
-- Possibilidade de escolher idioma e apresentar sugestões do que fazer com base na temperatura.
+- [x] Apresenta a previsão do tempo para os próximos 7 dias;
+- [x] Possibilita escolher um estado e cidade brasileira;
+- [x] Mostra um gráfico 
+- [x] Sugere o que fazer aos domingos;
+- [x] Apresenta temperatura máxima e mínima de cada dia;
+- [ ] Modificar background do card conforme previsão do dia (sol, nublado, chuvoso...);
+- [x] Salvar uma cidade como favorita;
+- [x] Mostra Blumenau, SC como cidade padrão;
+- [x] Apresentar variação de temperatura;
+- [ ] Possibilidade de escolher idioma e apresentar sugestões do que fazer com base na temperatura.
 
 ## Referências
 
