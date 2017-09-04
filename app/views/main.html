@@ -1,33 +1,63 @@
 <div class="container">
 
-  <!-- state and city select -->
+  <!-- state and city select, and favorite button -->
   <div class="jumbotron">
     <div class="row">
       <div class="form-group col-lg-5" >
         <label for="sel1">State</label>
-        <select class="form-control" ng-model="state" ng-options="st as st.name for st in states">
+        <select class="form-control" ng-model="main.state" ng-options="st as st.name for st in main.states">
         </select>
       </div>
       <div class="form-group col-lg-5">
         <label for="sel1">City</label>
-        <select class="form-control" ng-disabled="!state"  ng-model="city" ng-options="ct as ct for ct in state.cities">
+        <select class="form-control" ng-disabled="!main.state"  ng-model="main.city" ng-options="ct as ct for ct in main.state.cities">
         </select>
       </div>
-        <div class="col-md-1 col-sm-2 col-xs-6">
-      <button style="margin-top: 1.8em;" type="button" name="button" class="btn btn-primary" ng-disabled="!city" ng-click="search(state, city)">Search</button>
+			<div class="col-md-1 col-sm-2 col-xs-6">
+				<button style="margin-top: 1.8em;" type="button" name="button" class="btn btn-primary" ng-disabled="!main.city" ng-click="main.search(main.state.name, main.city)">Search</button>
+			</div>
     </div>
-    </div>
+		<div class="row">
+			<div class="form-group col-lg-5">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" ng-disabled="!main.city" ng-click="main.setFavorite(main.state.name, main.city)" ng-model="main.cbFavorite" 
+						ng-checked="(main.state.name && main.state.name == main.favoriteState) && (main.city && main.city == main.favoriteCity)">
+						Mark city as favorite
+					</label>
+				</div>
+			</div>
+		</div>
   </div>
+
+	<!-- variation -->
+	<div class="jumbotron">
+		<h2>Variation</h2>
+		<canvas id="line" class="chart chart-line" chart-data="main.data"
+			chart-labels="main.labels" chart-legend="true" chart-series="main.series">
+		</canvas>
+	</div>
+
+	<!-- suggestion -->
+	<div class="jumbotron">
+		<h2>Suggestion</h2>
+		<div ng-if="main.recommend">
+			<h4>The beach will be great at the end of the week!</h4>
+		</div>
+		<div ng-if="!main.recommend">
+			<h4>Beach may not be a good option!</h4>
+		</div>
+	</div>
 
   <!-- weather cards -->
 	<div class="row">
-		<div class="col-sm-4" ng-repeat="weather in weathers">
+		<div class="col-sm-4" ng-repeat="weather in main.weathers">
 			<div class="weather-card one">
 				<div class="top">
 					<div class="wrapper">
 						<h1 class="heading" ng-bind="weather.day + ', ' + weather.date"></h1>
 						<p class="temp">
-							<span class="temp-value" ng-bind="getAverage(weather.high, weather.low)"></span>
+							<span class="temp-value" ng-bind="main.getAverage(weather.high, weather.low)"></span>
 							<span class="deg">0</span>
 							<a href="#"><span class="temp-type">C</span></a>
 						</p>
@@ -53,8 +83,7 @@
 					</div>
 				</div>
 			</div>
-		</div
+		</div>
 	</div>
 
 </div>
-

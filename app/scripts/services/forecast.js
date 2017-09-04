@@ -19,12 +19,10 @@ angular.module('weatherForecastApp')
         woeid: '',
         unit: 'c',
         success: function(weather) {
-          console.log(weather);
-          console.log(weather.forecast);
           deferred.resolve(weather);
         },
         error: function(error) {
-          deferred.error(error);
+          deferred.reject(error);
         }
       });
 
