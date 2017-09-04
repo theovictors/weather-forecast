@@ -9,7 +9,7 @@
  * Controller of the weatherForecastApp
  */
 angular.module('weatherForecastApp')
-  .controller('MainCtrl', function ($scope, cities, forecast, favorite) {
+  .controller('MainCtrl', function (cities, forecast, favorite) {
 
     let vm = this;
     vm.cbFavorite = false;
@@ -23,19 +23,6 @@ angular.module('weatherForecastApp')
         
         loadFavorite();
       });
-
-    vm.getDayOfWeek = function(dayOfWeek) {
-      var weekday = new Array(7);
-      weekday["Mon"]="Monday";
-      weekday["Tue"]="Tuesday";
-      weekday["Wed"]="Wednesday";
-      weekday["Thu"]="Thursday";
-      weekday["Fri"]="Friday";
-      weekday["Sat"]="Saturday";
-      weekday["Sun"]="Sunday";
-      
-      return weekday[dayOfWeek];
-    };
 
     vm.search = function(state, city) {
       getWeather(state, city);
@@ -76,7 +63,6 @@ angular.module('weatherForecastApp')
     };
 
     let loadFavorite = function() {
-      //Load the favorite city from service
       favorite.get()
         .then(function(fav) {
           vm.states.some(function(st) {
@@ -101,7 +87,7 @@ angular.module('weatherForecastApp')
       let max = [];
       vm.series = ['Maximum', 'Minimum'];
       vm.weatherInfo.forEach(function(pr) {
-        labels.push(pr.date); //Show days name as labels
+        labels.push(pr.date);
         min.push(pr.low);
         max.push(pr.high);
       });
