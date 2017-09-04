@@ -8,7 +8,7 @@
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 850px;
   }
 
   /* Remove the padding we set earlier */
@@ -31,7 +31,8 @@
 .weather-card {
   background: #fff;
   margin-bottom: 15px;
-  box-shadow: 0 1px 38px rgba(0, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.25);
+  /*box-shadow: 0 1px 38px rgba(0, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.25); */
+  border-radius: 6px;
   overflow: hidden;
 }
 .weather-card .top {
@@ -111,7 +112,7 @@
 }
 .weather-card .bottom {
   padding: 0 30px;
-  background: #fff;
+  background: #eee;
 }
 .weather-card .bottom .wrapper .forecast {
   overflow: hidden;
@@ -135,7 +136,7 @@
   display: block;
   font-size: 25px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.50);
   line-height: 1em;
   margin-bottom: 15px;
 }
