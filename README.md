@@ -43,14 +43,13 @@ Utilize o comando `gulp serve` para rodar o projeto no navegador.
 
 - [x] Apresenta a previsão do tempo para os próximos 7 dias;
 - [x] Possibilita escolher um estado e cidade brasileira;
-- [x] Mostra um gráfico 
 - [x] Sugere o que fazer aos domingos;
 - [x] Apresenta temperatura máxima e mínima de cada dia;
-- [ ] Modificar background do card conforme previsão do dia (sol, nublado, chuvoso...);
+- [ ] Modifica background do card conforme previsão do dia (sol, nublado, chuvoso...);
 - [x] Salvar uma cidade como favorita;
 - [x] Mostra Blumenau, SC como cidade padrão;
-- [x] Apresentar variação de temperatura;
-- [ ] Possibilidade de escolher idioma e apresentar sugestões do que fazer com base na temperatura.
+- [x] Apresenta gráfico com variação de temperatura;
+- [ ] Possibilidade de alterar idioma (Português, inglês).
 
 ## Referências
 
